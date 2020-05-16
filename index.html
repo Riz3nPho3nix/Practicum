@@ -12,13 +12,17 @@
     </header>
     <main class="main">
         <section class="profile">
-            <div class="profile__ellipse">
+            <div class="profile__avatar">
+              <div class="profile__ellipse">
                 <img src="./images/cousteau.jpg" alt="Jacques Cousteau portrait" class="profile__picture">
+              </div>
             </div>
-            <h1 class="profile__name" id="profile__name">Jacques Cousteau</h1>
-            <button class="profile__edit"><img src="./images/pen.svg" alt="" class="profile__edit-image"></button>
-            <p class="profile__job" id="profile__job">Explorer</p>
-            <button class="profile__add-button"><img src="./images/plus.svg" alt="" class="plus"></button>
+            <div class="profile__info">
+              <h1 class="profile__name" id="profile__name">Jacques Cousteau</h1>
+              <p class="profile__job" id="profile__job">Explorer</p>
+              <button class="profile__edit link"></button>
+            </div>
+            <button class="profile__add-button link"></button>
         </section>
         <ul class="thumbs">
             <li class="thumb">
@@ -64,6 +68,17 @@
                 </div>
             </li>
         </ul>
+      <div class="modal" id="edit">
+        <div class="modal__window">
+          <span class="close link">&times;</span>
+          <h2 class="modal__heading">Edit Profile</h2>
+          <form action="" class="modal__form">
+            <input type="text" name="profile_name" id="">
+            <input type="text" name="profile_job" id="">
+            <button class="modal__btn" id="modal_btn">Save</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
         <p class="footer__copyright">&copy; 2020 Brian Wilson</p>
